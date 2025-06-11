@@ -11,23 +11,29 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_s' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', '_s' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="https://automattic.com/">Automattic</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+			<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+			<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</footer>
+</div><!-- #page-wrapper -->
 
+<!-- Scripts -->
+<script src="<?= get_template_directory_uri() ?>/src/js/default/jquery.min.js"></script>
+<script src="<?= get_template_directory_uri() ?>/src/js/default/jquery.dropotron.min.js"></script>
+<script src="<?= get_template_directory_uri() ?>/src/js/default/jquery.scrollex.min.js"></script>
+<script src="<?= get_template_directory_uri() ?>/src/js/default/browser.min.js"></script>
+<script src="<?= get_template_directory_uri() ?>/src/js/default/breakpoints.min.js"></script>
+<script src="<?= get_template_directory_uri() ?>/src/js/default/util.js"></script>
+<script src="<?= get_template_directory_uri() ?>/src/js/default/main.js"></script>
 <?php wp_footer(); ?>
 
 </body>
