@@ -186,3 +186,10 @@ function register_menus() {
 }
 add_action("init","register_menus"); 
 
+// CUSTOM POST TYPE && TAXONOMY
+include get_template_directory() . '/custom_post_types/event.php';
+include get_template_directory() . '/custom_post_types/transcription.php';
+
+include get_template_directory() . '/custom_post_types/taxGenre.php';
+include get_template_directory() . '/custom_post_types/taxDifficulty.php';
+
